@@ -34,6 +34,11 @@ function Hero() {
           onClick={toggleTheme}
         />
       </div>
+
+      <a href="/register">
+  <button className="hover">Register</button>
+</a>
+
       <div className={styles.info}>
         <h1>
           <b>Ganesh</b>

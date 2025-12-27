@@ -1,11 +1,15 @@
-import './App.css';
-import Contact from './sections/Contact/Contact';
-import Footer from './sections/Footer/Footer';
-import Hero from './sections/Hero/Hero';
-import Projects from './sections/Projects/Projects';
-import Skills from './sections/Skills/Skills';
+import "./App.css";
+import { Routes, Route } from "react-router-dom";
 
-function App() {
+import Contact from "./sections/Contact/Contact";
+import Footer from "./sections/Footer/Footer";
+import Hero from "./sections/Hero/Hero";
+import Projects from "./sections/Projects/Projects";
+import Skills from "./sections/Skills/Skills";
+import Registration from "./sections/Registration/Registration";
+
+// Home page component
+function Home() {
   return (
     <>
       <Hero />
@@ -14,6 +18,15 @@ function App() {
       <Contact />
       <Footer />
     </>
+  );
+}
+
+function App() {
+  return (
+    <Routes>
+      <Route path="/" element={<Home />} />
+      <Route path="/register" element={<Registration />} />
+    </Routes>
   );
 }
 
