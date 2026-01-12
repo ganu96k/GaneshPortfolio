@@ -8,11 +8,13 @@ import Projects from "./sections/Projects/Projects";
 import Skills from "./sections/Skills/Skills";
 import Registration from "./sections/Registration/Registration";
 import Gallery from "./sections/Gallery/Gallery"; 
+import { SpeedInsights } from "@vercel/speed-insights/next"
 
 // Home page component
 function Home() {
   return (
     <>
+     <SpeedInsights />
       <Hero />
       <Projects />
       <Skills />
